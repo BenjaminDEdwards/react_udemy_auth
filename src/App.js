@@ -1,8 +1,25 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import firebase from 'firebase';
 import { Header} from './components/common';
 
+
 class App extends Component {
+  componentWillMount() {
+		// var config = {
+		const config = {
+			apiKey: 'AIzaSyCdYLpWhdnxL_pjDR0dNQ63M_2C5OSPXx8',
+			authDomain: 'udemyauth-e52b4.firebaseapp.com',
+			databaseURL: 'https://udemyauth-e52b4.firebaseio.com',
+			projectId: 'udemyauth-e52b4',
+			storageBucket: 'udemyauth-e52b4.appspot.com',
+			messagingSenderId: '476501996252'
+		};
+		firebase.initializeApp(config);
+  }
+
+
+  // Render renders the entire screen
   render() {
     return (
       <View>
