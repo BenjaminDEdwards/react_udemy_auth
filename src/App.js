@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View} from 'react-native';
-//import firebase from 'firebase';
+import firebase from 'firebase';
 import { Header} from './components/common';
 import LoginForm from './components/LoginForm';
 
@@ -8,7 +8,7 @@ class App extends Component {
 
 
 
-  /*componentWillMount() {
+  componentWillMount() {
 		firebase.initializeApp({
 			apiKey: 'AIzaSyCdYLpWhdnxL_pjDR0dNQ63M_2C5OSPXx8',
 			authDomain: 'udemyauth-e52b4.firebaseapp.com',
@@ -17,7 +17,7 @@ class App extends Component {
 			storageBucket: 'udemyauth-e52b4.appspot.com',
 			messagingSenderId: '476501996252'
 		});
-  }*/
+  }
 
   // Render renders the entire screen
   render() {
